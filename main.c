@@ -41,8 +41,16 @@ int task(char* input)
           break;
         case '/':
           reg = pop(s);
-          reg /= pop(s);
-          push(s,reg);
+          int k = pop(s);
+          if(k != 0){
+            reg /= k;
+            push(s,reg);
+          }
+          else{
+            printf("\nCannot divivde by zero!!!!!!\n")
+            clear(s);
+            return 1;
+          }
           break;
         default:
           printf("\nError: Incorrect input\n");
