@@ -47,7 +47,7 @@ int task(char* input)
             push(s,reg);
           }
           else{
-            printf("\nCannot divivde by zero!!!!!!\n")
+            printf("\nCannot divivde by zero!!!!!!\n");
             clear(s);
             return 1;
           }
